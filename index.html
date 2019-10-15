@@ -18,9 +18,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- Axios -->
+    <!-- Client HTTP basé sur les promesses -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body>
+  <body onload='start();'>
+    <!-- Header -->
     <div
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
     >
@@ -34,6 +36,7 @@
       </p>
     </div>
 
+    <!-- Recherche d'une ville -->
     <div class="container">
       <div class="input-group mb-5 offset-4 col-4">
         <input id="city-input" type="text" class="form-control" placeholder="Rentrer le nom d'une ville">
@@ -43,6 +46,7 @@
       </div>
     </div>
 
+    <!-- Météo d'aujourd'hui -->
     <div class="container">
         <div class="card-deck mb-3 text-center">
           <div class="card mb-4 shadow-sm offset-sm-1">
@@ -57,13 +61,12 @@
                 <div id="icon-weather-container" ></div>
                 <h3 id="today-forecast-temp"> </h3>
               </div>
-              <button type="button" class="btn btn-lg btn-block btn-primary button-load-forecast" onclick='start()'>
-                Quel temps fait'il aujourd'hui ?
-              </button>
             </div>
           </div>
         </div>
+      </div>
 
+    <!-- Météo des trois prochains jours -->
     <div class="container">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm offset-sm-1">

@@ -8,9 +8,9 @@ A lire impérativement avant de commencer quoi que ce soit, ce sont les règles 
 
 ## Instructions
 
-1. Comprendre le code en HTML et JS
+OK  1. Comprendre le code en HTML et JS
 
-2. Faire en sorte que la fonction start() soit executée sans appuyer sur le bouton #button-load-forecast.
+OK  2. Faire en sorte que la fonction start() soit executée sans appuyer sur le bouton #button-load-forecast.
 Le bouton se sert donc plus à rien, il faut l'enlever.
 *Hint: Voir la propriété onload.*
 
